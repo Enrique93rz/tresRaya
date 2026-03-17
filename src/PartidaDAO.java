@@ -7,8 +7,8 @@ public class PartidaDAO {
 		ArrayList<PartidaDTO>lista = new ArrayList<>();
 		String sql = "SELECT * FROM Partida";
 		
-		try(Conexion con = Conexion.getConnection();
-			PreparedStatement ps = con.pre;
+		try(Connection con = Conexion.getConnection();
+			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery()){
 			while (rs.next()) {
 				PartidaDTO p = new PartidaDTO();
