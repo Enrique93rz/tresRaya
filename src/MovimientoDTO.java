@@ -1,5 +1,5 @@
 
-public class CasillaDTO {
+public class MovimientoDTO {
 
 	private int partida;
 	private int coordX;
@@ -7,9 +7,9 @@ public class CasillaDTO {
     private String contenido;
     
     
-    public CasillaDTO() {}
+    public MovimientoDTO() {}
     
-    public CasillaDTO(int partida, int coordX, int coordY, String contenido) {
+    public MovimientoDTO(int partida, int coordX, int coordY, String contenido) {
     	this.partida=partida;
     	this.coordX=coordX;
     	this.coordY=coordY;
